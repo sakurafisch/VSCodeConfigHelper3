@@ -120,7 +120,7 @@ std::optional<std::string> Environment::getVscodePath() {
         path = COMMON_VSCODE_INSTALLATION;
     else
 #endif
-        path = bp::search_path("code").string();
+        path = bp::search_path("code-insiders").string();
     
     LOG_DBG("VS Code Path: ", path);
     if (!path.empty()) return path;
